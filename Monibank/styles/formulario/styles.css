@@ -48,6 +48,9 @@
 .formulario__container {
     margin: 3em 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .formulario__campo {
@@ -97,6 +100,13 @@
     font-size: 18px;
     line-height: 22px;
     color: var(--branco);
+    cursor: pointer;
+}
+
+.formulario__botao:hover,
+.camera__botao:hover {
+    background: #51a0c5;
+    transition: 0.25s;
 }
 
 .formulario__imagem {
@@ -114,7 +124,7 @@
 }
 
 .formulario__texto {
-    margin: 1em 8em;
+    max-width: 275px;
 }
 
 .formulario__texto--negrito {
@@ -127,6 +137,8 @@
 
 .mensagem-erro {
     color: red;
+    font-size: 0.85rem;
+    line-height: 24px;
 }
 
 .campo__escrita--erro {
